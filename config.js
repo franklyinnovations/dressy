@@ -1,6 +1,6 @@
 var config = {
     port: process.env.PORT || 3000,
-    hostname: 'http://polar-temple-84344.herokuapp.com/', // https://publicshopifyapp.com
+    hostname: 'http://polar-temple-84344.herokuapp.com', // https://publicshopifyapp.com
     shopify: {
         api_key: '9c028b59162eb68d55da9d0db2285432',
         shared_secret: 'b2cce7151aa0e1cd426baea69f9976cc',
