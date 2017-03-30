@@ -2,7 +2,7 @@ var express = require('express');
 var shopifyAPI = require('shopify-node-api');
 var randomString = require('randomstring');
 var config = require('../config');
-
+var url = require('url');
 var Shop = require('../models/shop');
 
 var index = function (req, res, next) {
@@ -41,3 +41,9 @@ var dashboard = function (req, res, next) {
 };
 
 exports.dashboard = dashboard;
+
+var homepage = function (req, res, next) {
+    res.render('homepage');
+};
+
+exports.homepage = homepage;

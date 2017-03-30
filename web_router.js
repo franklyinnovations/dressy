@@ -9,7 +9,10 @@ var the_app = require('./controllers/the_app'); //dashboard
 //middleware
 var auth = require('./middlewares/auth'); //login checker
 
-router.get('/', auth.verify_shop_name, the_app.index);
+// install routes
+//https://thehackerfirm.myshopify.com/admin/oauth/authorize?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Flogin&scope=read_products&client_id=9c028b59162eb68d55da9d0db2285432
+router.get('/', the_app.homepage);
+router.get('/shopify', auth.verify_shop_name, the_app.index);
 router.get('/login', auth.hasNonce, shop.login);
 router.get('/payments', auth.hasToken, shop.payments);
 router.get('/charge', auth.hasCharge, shop.charge);

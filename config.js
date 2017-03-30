@@ -1,6 +1,6 @@
 var config = {
     port: process.env.PORT || 3000,
-    hostname: 'http://polar-temple-84344.herokuapp.com', // https://publicshopifyapp.com
+    hostname: 'http://localhost:3000', // https://publicshopifyapp.com
     shopify: {
         api_key: '9c028b59162eb68d55da9d0db2285432',
         shared_secret: 'b2cce7151aa0e1cd426baea69f9976cc',
@@ -47,7 +47,7 @@ var config = {
      * If you are using it on local machine, read more at https://help.shopify.com/api/tutorials/webhooks
      */
     web_hook: {
-        uninstall: 'http://polar-temple-84344.herokuapp.com/api/v1/uninstall' //example, used ngrok "ngrok http localhost:3000"
+        uninstall: 'http://20b8696c.ngrok.io/api/v1/uninstall' //example, used ngrok "ngrok http localhost:3000"
     }
 };
 
