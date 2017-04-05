@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "start-server": "npm run build-dev & node server.js",
-    "start-client": "npm start & webpack-dev-server --inline --hot --history-api-fallback --host localhost --port 8080",
+    "start-client": "webpack-dev-server --inline --hot --history-api-fallback --host localhost --port 8080",
     "build-dev": "webpack --config webpack.dev.config.js",
     "build-prod": "webpack -p --config webpack.prod.config.js",
     "test": "mocha --recursive --compilers js:babel-register --require babel-polyfill --require ignore-styles",
