@@ -18,7 +18,7 @@ import {
   TeamMember,
 } from "neal-react";
 
-const brandName = "SamplePage";
+const brandName = "Dressy";
 const brand = <span>{brandName}</span>;
 
 const onSignup = ({ name: name, email: email, password: password }) => Stripe.StripeHandler.open({
@@ -97,8 +97,8 @@ export default class Home extends React.Component {
     return (
       <Page>
 
-        <Navbar brand={brand}>
-          <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
+        <Navbar brand={brand} className="navbar-fixed-top">
+          <NavItem>Login</NavItem>
           <NavItem dropdown={true}>
             <DropdownToggle>Github</DropdownToggle>
             <DropdownMenu>

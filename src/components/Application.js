@@ -26,10 +26,8 @@ export class Application extends React.Component {
     // render
     return (
       <App>
-        <div className="container">
-          <div>
-            {children}
-          </div>
+        <div>
+          {children}
         </div>
       </App>
     );

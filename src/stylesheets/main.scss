@@ -5,10 +5,6 @@
   width: 300px;
 }
 
-.nav {
-  margin: 30px 0 20px 0;
-}
-
 .footer {
   clear: both;
   margin-bottom: 50px;
@@ -35,4 +31,29 @@
 
 th {
   background-image: url('/media/pattern.jpg');
+}
+
+// .navbar-fixed-bottom, .navbar-fixed-top {
+//     position: fixed;
+//     right: 0;
+//     left: 0;
+//     z-index: 1030;
+// }
+//
+// .navbar-fixed-top {
+//     top: 0;
+// }
+
+.navbar-brand {
+  float: left;
+  color: white;
+}
+
+nav.neal-navbar li.nav-item {
+  padding: 0.5em 1em;
+  // color: white;
+}
+
+.text-xs-center {
+  text-align: center !important;
 }
